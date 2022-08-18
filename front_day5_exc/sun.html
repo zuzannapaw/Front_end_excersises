@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		body{
+			background-color: #444;
+			animation: sky 7s infinite ;
+		}
+		.sun{
+			position:fixed;
+			bottom:5%;
+			left:10%;
+			width:15vw;
+			height:15vw;
+			background-color: darkred;
+			border-radius: 50%;
+			animation: sun 7s infinite linear;
+		}
+		
+		.grass{
+			position:fixed;
+			left:0;
+			right:0;
+			bottom:0;
+			height:25vh;
+			background-color: #222;
+			animation: grass 7s infinite;
+		}
+		
+		@keyframes sky{
+/*
+			0%{
+				background-color: #444;
+				
+			}
+*/
+			30%{
+				background-color: #B64470;
+				
+			}
+			50%{
+				background-color: lightblue;
+			}
+			70%{
+				background-color: #B64470;
+			}
+			
+/*
+			100%{
+				background-color: #444;
+				
+			}
+*/
+			
+		}
+		
+		@keyframes grass{
+/*
+			0%{
+				background-color: #222;
+			}
+*/
+			30%{
+				background-color: darkgreen;
+			}
+			50%{
+				background-color: lawngreen;
+			}
+			70%{
+				background-color: darkgreen;
+			}
+/*
+			100%{
+				background-color: #222;
+			}
+*/
+			
+		}
+		@keyframes sun{
+			0%{
+				bottom:5%;
+				left:10%;
+				background-color: darkred;
+			}
+			
+			50%{
+				bottom:45%;
+				background-color: yellow;
+			}
+			
+			100%{
+				bottom:5%;
+				left:90%;
+				background-color: darkred;
+			}
+		}
+	</style>
+</head>
+
+	<div class="sun"></div>
+	<div class="grass"></div>
+<body>
+</body>
+</html>

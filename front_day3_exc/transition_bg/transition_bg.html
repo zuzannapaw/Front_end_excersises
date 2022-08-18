@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadanie 1 - zmiana koloru po najechaniu</title>
+
+    <style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		div.bg{
+			background-color: #1C1B1B;
+			width:100vw;
+			height:100vh;
+			transition:1s;
+		}
+		div.circle{
+			width: 50px;
+			height:50px;
+			border-radius: 50%;
+			border:7px solid white;
+			position:absolute;
+			cursor:pointer;
+			z-index: 1;
+		}
+		div.red{
+			background-color: red;
+			top:10px;
+			left:10px;
+			
+		}
+		div.green{
+			background-color: green;
+			bottom:10px;
+			left:10px;
+		}
+		div.blue{
+			background-color: blue;
+			top:10px;
+			right:10px;
+		}
+		div.orange{
+			background-color: orange;
+			bottom:10px;
+			right:10px;
+		}
+		
+		p{ 
+			line-height: 100vh;
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			text-align:center;
+			font-size: 50px;
+			font-family: arial;
+			opacity:0;
+			color:white;
+			transition:1s;
+			
+		}
+		
+		div.red:hover ~ .bg{
+			background-color: red;
+			
+		}
+		div.green:hover ~ .bg{
+			background-color: green;
+			
+		}
+		
+		div.blue:hover ~ .bg{
+			background-color: blue;
+			
+		}
+		
+		div.orange:hover ~ .bg{
+			background-color: orange;
+			
+		}
+		
+		div.red:hover~.bg p.red{
+			opacity:1;
+				
+		}
+		div.green:hover~.bg p.green{
+			opacity:1;
+				
+		}
+		div.blue:hover~.bg p.blue{
+			opacity:1;
+				
+		}
+		div.orange:hover~.bg p.orange{
+			opacity:1;
+				
+		}
+		
+		
+		
+		
+    </style>
+</head>
+
+<body>
+    <div class="red circle"></div>
+    <div class="green circle"></div>
+    <div class="blue circle"></div>
+    <div class="orange circle"></div>
+    <div class="bg">
+        <p class="red">Czerwony</p>
+        <p class="green">Zielony</p>
+        <p class="blue">Niebieski</p>
+        <p class="orange">Pomarańczowy</p>
+    </div>
+</body>
+
+</html>

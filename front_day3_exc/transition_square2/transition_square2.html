@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Square2</title>
+	
+ <style>
+		button{
+			display: block;
+			background-color: black;
+			color:white;
+			line-height:30px;
+			font-size: 18px;
+			width:200px;
+			height:100px;
+			margin:0 auto;
+			transition:.5s;
+			
+		}
+		button:hover{
+			background-color: white;
+			color:black;
+			border:3px solid black;
+		}
+		div.square{
+			width:30px;
+			height:30px;
+			background-color: black;
+			position:absolute;
+			top:0;
+			left:0;
+			transition: left .5s, top .5s .5s, width 1s, height 1s;
+		}
+		button:hover+div.square{
+			width:70px;
+			height:70px;
+			top:calc(100% - 70px);
+			left:calc(100% - 70px);
+		}
+    </style>
+</head>
+
+<body>
+    <button>Lecimy!</button>
+    <div class="square"></div>
+</body>
+
+</html>

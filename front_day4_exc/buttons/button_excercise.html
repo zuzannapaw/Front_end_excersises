@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding:0;
+		}
+		
+		button{
+			position: relative;
+			display:block;
+			margin:100px auto;
+			font-size: 40px;
+			padding:10px 30px ;
+			background-color:transparent;
+			border: 3px solid black;
+			overflow: hidden;
+			transition:0.3s;
+			
+			
+		}
+		button::before{
+			content: "";
+			position:absolute;
+			width:100%;
+			height:16px;
+			background-color: #9A4042;
+			transform: translateY(-50%);
+			top:50%;
+			left:100%;
+			transition: left 0.2s, height 0.1s 0.2s;
+			z-index: -1;
+		}
+		button:hover{
+			color:white;
+		}
+		
+		button:hover::before{
+			left:0;
+			height:102%;
+		}
+		
+	
+		
+	</style>
+</head>
+
+<body>
+	<button>Button</button>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!-- Ustaw trzy kolumny za pomocą flex - max dla sekcji obejmującej 3 kolumny to 1200px -->
+<!-- Każda kolumna też ma byc kontenerem flex. Kolumny powinny mieć 25% szerokości rodzica, między kolumnami powinny być odstępy-->
+<!-- Cena zawsze na dole i obramowana -->
+<!-- link: https://websamuraj.pl/examples/fez/cennik.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Ladies night - price list</title>
+ <style>
+	
+	 body{
+		font-family: arial,sans-serif; 
+	 }
+	 h1{
+		 text-align: center;
+		 margin:20px 0;
+		 text-transform: uppercase;
+	 }
+	 section{
+		 font-size: 20px;
+		 max-width:1200px;
+		 margin:0 auto;
+		 display:flex;
+		 justify-content: space-around;
+		 
+	 }
+	 .col{
+		 box-sizing: border-box;
+		 display:flex;
+		 flex-direction: column;
+		 align-items: center;
+		 background-color: lightgrey;
+		 flex-basis:25%;
+		 padding:20px 20px;
+		 
+	 }
+	 img{
+		 width:80%;
+	 }
+	 p{
+		 margin:30px 0;
+	 }
+	 .price{
+		 display:flex;
+		 flex-direction: column;
+		 justify-content: flex-end;
+		 flex-grow: 1;
+		 width:100%;
+		 text-align: center;
+		
+	 
+	 }
+	  span{
+		
+		  background-color: white;
+		 border:2px solid black;
+		  padding:20px;
+		 
+	 }
+	 
+ </style>
+</head>
+
+<body>
+
+ <h1>Ladies night - invite our troll!</h1>
+ <section>
+  <div class="col">
+   <h2>Option 1</h2>
+   <img src="img/1.png" alt="">
+   <p>Very cheap</p>
+   <p class="price"><span>100 coins</span></p>
+  </div>
+  <div class="col">
+   <h2>Option 2</h2>
+   <img src="img/2.png" alt="">
+   <p>Not very cheap</p>
+   <p>Troll with a stick</p>
+   <p class="price"><span>300 coins</span></p>
+  </div>
+  <div class="col">
+   <h2>Option 3</h2>
+   <img src="img/3.png" alt="">
+   <p>Expensive</p>
+   <p>High power (all night)</p>
+   <p>Handsome (for a troll)</p>
+   <p class="price"><span>500 coins</span></p>
+  </div>
+
+ </section>
+</body>
+
+</html>

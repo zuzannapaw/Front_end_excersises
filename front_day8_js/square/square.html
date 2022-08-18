@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Square Rotate</title>
+ <style>
+  button {
+   padding: 10px;
+   font-size: 50px;
+   font-family: sans-serif;
+   background-color: transparent;
+   border: 2px solid black;
+  }
+
+  .square {
+   width: 100px;
+   height: 100px;
+   background-color: #000;
+   position: fixed;
+   top: calc(50% - 50px);
+   left: calc(50% - 50px);
+  }
+	 
+ </style>
+</head>
+
+<body>
+ <button>Turn</button>
+ <div class="square"></div>
+
+ <script>
+	 
+	 
+let rotate = 0;
+const deg = 10;
+
+
+let btn = document.querySelector('button');
+let div = document.querySelector('div');
+	 div.style.transition = 0.5 + "s";
+	 
+  
+
+btn.addEventListener('click',function(){
+	rotate = rotate + deg;
+	
+div.style.transform = "rotate(" + rotate + "deg)";
+	
+});
+  
+ </script>
+</body>
+
+</html>

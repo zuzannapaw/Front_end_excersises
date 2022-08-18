@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		section{
+			position:absolute;
+			width:80%;
+			height:30vh;
+			top:50%;
+			left:50%;
+			transform:translate(-50%, -50%);
+			background-color: royalblue;
+			color:white;
+			overflow: hidden;
+			
+		}
+		h1{
+			position:absolute;
+			top:50%;
+			left:0;
+			width:100%;
+			text-align:center;
+			transform:translate(0, -50%);
+			font-size: 60px;
+			text-transform: uppercase;
+			animation:text 15s linear infinite both;
+			font-family: arial,sans-serif;
+			
+		}
+		h1:nth-child(2){
+			animation-delay: 5s
+		}
+		h1:nth-child(3){
+			animation-delay: 10s
+		}
+		@keyframes text{
+			0%{
+				transform:translate(100%, -50%)
+			}
+			6%{
+				transform:translate(100%, -50%)
+			}
+			8%{
+				transform:translate(0, -50%)
+			}
+			29%{
+				transform:translate(0, -50%)
+			}
+			33%{
+				transform:translate(-100% ,-50%)
+			}
+			100%{
+				transform:translate(-100% ,-50%)
+				
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+		<h1>cheap</h1>
+		<h1>fast</h1>
+		<h1>good</h1>
+	</section>
+</body>
+</html>

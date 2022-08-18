@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style>
+		body{
+			display:flex;
+			margin:0;
+			background-color: #ddd;
+			height:100vh;
+			justify-content: center;
+			background-image: url("img/bg1920x1280.jpg");
+			background-size:cover;
+			background-position: center;
+			
+		}
+		
+		div{
+			flex-basis: 25%;
+			background-color: rgba(255,0,0,0.2);
+		}
+		@media(max-width:640px){
+			body{
+				background-image: url("img/bg640x426.jpg");
+			}
+		}
+		
+	
+		
+		@media(min-width: 641px) and (max-width:1280px{
+			body{
+				background-image: url("img/bg1280x853.jpg");
+			}
+			
+		}
+			@media (min-width:1281px){
+			body{
+				background-image: url("img/bg1920x1280.jpg");
+			}
+		}
+		@media(min-width:1025px){
+			body{
+				background-color: goldenrod;
+			}
+		}
+		@media(orientation:portrait){
+			body{
+				flex-direction: column;
+			}
+			div{
+				flex-basis:50%;
+			}
+		}
+		
+		@media(orientation:landscape) and (max-height: 200px){
+			div{
+				background-color: white;
+			}	
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+	<div></div>
+</body>
+</html>
